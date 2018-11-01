@@ -1,9 +1,6 @@
 {
   "name": "test-polymer",
   "main": "test-polymer.html",
-  "authors": [
-    "Siptec S de RL"
-  ],
   "version": "1.0.0",
   "license": "apache-2.0",
   "ignore": "bower_components",
