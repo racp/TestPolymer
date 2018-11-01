@@ -1,0 +1,51 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../vaadin-ordered-layout/vaadin-horizontal-layout.html">
+<link rel="import" href="../vaadin-ordered-layout/vaadin-vertical-layout.html">
+<link rel="import" href="../paper-input/paper-input.html">
+
+<dom-module id="test-polymer">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <vaadin-horizontal-layout theme="spacing">
+      <vaadin-vertical-layout>
+        <paper-input id="contacto" label="Contacto" readonly></paper-input>
+        <paper-input id="direccion" label="Dirección" readonly></paper-input>
+        <paper-input id="codciudad" label="Ciudad" readonly></paper-input>
+        <paper-input id="codpais" label="País" readonly></paper-input>
+        <paper-input id="codvendedor" label="Vendedor" readonly></paper-input>
+        <paper-input id="codrnc" label="RNC" readonly></paper-input>
+        <paper-input id="fechavenc" label="Fecha de Venc" readonly></paper-input>
+      </vaadin-vertical-layout>
+      <vaadin-vertical-layout>
+      </vaadin-vertical-layout>
+    </vaadin-horizontal-layout>
+  </template>
+
+  <script>
+    /**
+     * `test-polymer`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class TestPolymer extends Polymer.Element {
+      static get is() { return 'test-polymer'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'test-polymer'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(TestPolymer.is, TestPolymer);
+  </script>
+</dom-module>
