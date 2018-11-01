@@ -1,8 +1,7 @@
 {
   "name": "test-polymer",
   "main": "test-polymer.html",
-  "version": "1.0.0",
-  "license": "apache-2.0",
+   "license": "apache-2.0",
   "ignore": "bower_components",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0",
